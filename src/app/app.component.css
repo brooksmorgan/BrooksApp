@@ -3,3 +3,10 @@ img{
     width: 70px;
     height:70px;
 }
+
+form{
+
+    margin-right:auto;
+    margin-left: auto;
+    width:500px;
+}
