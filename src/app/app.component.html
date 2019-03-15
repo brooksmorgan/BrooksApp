@@ -1,30 +1,34 @@
-<form  >
-<div>
-  <h2>LOGIN PAGE</h2>
-</div>
-   
-<div>
-  <img src ="assets/Images/avatar.png" alt="avatar">
-</div>
 
-    <div class="ui input">
-        <input type="text" placeholder="username">
-      </div>
-      <div class="ui input">
-        <input type="password" placeholder="password">
-      </div>
+      <table>
+         <thead>
+            <tr>
+               <th *ngFor = "let tableheader of tableheaders"> {{tableheader}} </th>
+            </tr>
+         </thead> 
+      
 
-    <div class="ui animated button" tabindex="0">
-        <div class="visible content">Login</div>
-        <div class="hidden content">
-          <i class="right arrow icon"></i>
-        </div>
-      </div>
+         <tbody>
 
+            <tr>
+               <td *ngFor = "let tabledata of tabledatas"> {{tabledata}} </td>
+            </tr>
+            
+            <tr>
+               <td *ngFor = "let tabledata1 of tabledatas1"> {{tabledata1}} </td>
+            </tr>
 
-</form>
+            <tr>
+               <td *ngFor = "let tabledata2 of tabledatas2"> {{tabledata2}} </td>
+            </tr>
 
+            <tr>
+               <td *ngFor = "let tabledata3 of tabledatas3"> {{tabledata3}} </td>
+            </tr>
 
+            <tr>
+               <td *ngFor = "let tabledata4 of tabledatas4"> {{tabledata4}} </td>
+            </tr>
+         </tbody>
 
-
-
+      </table>
+  
